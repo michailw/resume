@@ -173,15 +173,15 @@ header:after {
     background-image: url("logos/angular.svg");
 }
 
+#skills .icon.react:before {
+    background-image: url("logos/react.svg");
+}
+
 #workHistory > section {
     border-bottom: 1px dashed #333;
 }
 
-#workHistory > section:not(.flexRow) {
-    display: flex;
-}
-
-#workHistory div.flexRow {
+#workHistory > section {
     display: flex;
 }
 
@@ -189,14 +189,15 @@ header:after {
     border: none;
 }
 
-#workHistory > section div:not(.flexRow):first-child {
+#workHistory > section div:first-child {
     flex: 0 0 16em;
     background: #eee;
     margin-right: 0.4rem;
     padding: 0.4rem 0 0.4rem 0.4rem;
+    position: relative;
 }
 
-#workHistory > section div:not(.flexRow):first-child:before {
+#workHistory > section div:first-child:before {
     display: block;
     content: "";
     background-repeat: no-repeat;
@@ -206,10 +207,18 @@ header:after {
     height: 3rem;
 }
 
-#siemens div:not(.flexRow):first-child:before {
+#workHistory > section div:first-child:before {
+    display: none;
+}
+
+#workHistory > section div:first-child:before {
+    display: block;
+}
+
+.siemens div:first-child:before {
     background-image: url("logos/siemens.svg");
 }
 
-#pitney-bowes div:not(.flexRow):first-child:before {
+#pitney-bowes div:first-child:before {
     background-image: url("logos/pitney_bowes.svg");
 }

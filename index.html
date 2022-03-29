@@ -4,6 +4,7 @@
     <title>Michal Wojtowicz resume</title>
     <link rel="stylesheet" type="text/css" href="font/style.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="media.css"/>
 </head>
 <body>
 <header>
@@ -46,8 +47,9 @@
         <li class="icon python">Python</li>
         <li>JavaScript</li>
         <li class="icon nodejs">NodeJS</li>
+        <li class="icon react">React</li>
+        <li class="icon angular">AngularJS</li>
         <li>PHP</li>
-        <li class="icon angular">Angular</li>
         <li>Websockets</li>
         <li>SQL</li>
         <li>Chef</li>
@@ -57,7 +59,6 @@
 <section id="achievements">
     <h2>Achievements</h2>
     <ul>
-        <li><a href="https://www.linkedin.com/posts/wojtowiczmichal_hackathon-reward-activity-6579309499801182209-K3u6">3rd price in first hackathon on the top of Szyndzielnia mountain</a></li>
         <li>3800+ reputation points on <a href="https://stackoverflow.com/users/1426111" class="stackoverflow">StackOverflow</a></li>
         <li>Integration with Apple Business Chat</li>
         <li>Mentoring of whole teams and <a href="https://www.linkedin.com/posts/wojtowiczmichal_typescript-node-cryptography-activity-6574986754061803520-AnbR">individuals</a></li>
@@ -73,61 +74,114 @@
             <a href="https://www.linkedin.com/posts/wojtowiczmichal_last-friday-i-was-able-to-teach-new-craftsmen-activity-6480338512796225537-D4sO">Bielsko-Biala university</a>
         </li>
         <li>I also spoke about Docker&Kubernetes on Java User Group in Bielsko</li>
+        <li><a href="https://www.linkedin.com/posts/wojtowiczmichal_hackathon-reward-activity-6579309499801182209-K3u6">3rd price in first hackathon on the top of Szyndzielnia mountain</a></li>
     </ul>
 </section>
 
 <section id="workHistory">
     <h2>Work history</h2>
 
-    <section id="siemens" class="flexRow">
-        <div class="flexRow">
-            <div>
-                <h3>Cloud Architect</h3>
-                <h4>Siemens</h4>
-                <address>Katowice, Poland</address>
-                <time>since January 2022 until present</time>
-            </div>
-
-            <div>
-                <h5>General responsibilities</h5>
-                <ul>
-                    <li>Designs, POCs and early implementations of cloud architecture</li>
-                    <li>Fit projects into company ecosystem</li>
-                    <li>Focus on cloud native approach</li>
-                    <li>Evolving the architecture based on metrics</li>
-                    <li>Design involving security practices</li>
-                    <li>Design involving law regulations, like GDPR</li>
-                    <li>Creating (micro/macro) services based on project's needs</li>
-                    <li>Focus on autoscaling, redundancy, high availability</li>
-                    <li>Mentoring the team</li>
-                    <li>Integrations with MS Teams.</li>
-                </ul>
-            </div>
+    <section class="siemens">
+        <div>
+            <h3>Cloud Architect</h3>
+            <h4>Siemens</h4>
+            <address>Katowice, Poland</address>
+            <time>since January 2022 until present</time>
         </div>
 
-        <div class="flexRow">
-            <div>
-                <h3>Senior Cloud Developer</h3>
-                <h4>Siemens</h4>
-                <address>Katowice, Poland</address>
-                <time>December 2019</time> - <time>December 2021</time>
-            </div>
+        <div>
+            <h5>Cloud architect responsibilities</h5>
+            <ul>
+                <li>ISO27001 and SOC2 compliance</li>
+                <li>security management of employee permissions</li>
+                <li>Disaster Recovery procedures</li>
+                <li>shared terraform modules used across many products of Siemens</li>
+                <li>Open Source compliance</li>
+                <li>Architecture Decision Records</li>
+            </ul>
 
-            <div>
-                <h5>General responsibilities</h5>
-                <ul>
-                    <li>Designs, POCs and early implementations of cloud architecture</li>
-                    <li>Fit projects into company ecosystem</li>
-                    <li>Focus on cloud native approach</li>
-                    <li>Evolving the architecture based on metrics</li>
-                    <li>Design involving security practices</li>
-                    <li>Design involving law regulations, like GDPR</li>
-                    <li>Creating (micro/macro) services based on project's needs</li>
-                    <li>Focus on autoscaling, redundancy, high availability</li>
-                    <li>Mentoring the team</li>
-                    <li>Integrations with MS Teams.</li>
-                </ul>
-            </div>
+            <h5>General responsibilities</h5>
+            <ul>
+                <li>Security first</li>
+                <li>Mentoring of engineers - in groups and individually</li>
+                <li>Performing estimates of work hours and tracking progress using SCRUM methodology.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="siemens">
+        <div>
+            <h3>Senior Cloud Developer</h3>
+            <h4>Siemens</h4>
+            <address>Katowice, Poland</address>
+            <time>December 2019</time> - <time>December 2021</time>
+        </div>
+
+        <div>
+            <h5>Responsibilities of DevOps</h5>
+            <ul>
+                <li>Design and implementation of AWS Cloud infrastructure</li>
+                <li>Terraform scripts that set up the whole project's infrastructure</li>
+                <li>Deploying containers to AWS cloud to ElasticBeanstalk and ECS</li>
+                <li>Ansible playbooks which provision EC2 instances</li>
+                <li>Designing CI/CD processes, from early build to deployment</li>
+                <li>Implementation of CI/CD processes in Gitlab pipelines</li>
+                <li>Scripting in Bash, Python, Powershell</li>
+                <li>Autoscaling, redundancy, high availability</li>
+                <li>List of AWS services used and managed by me:
+                    <ul>
+                        <li>Lambda</li>
+                        <li>EC2</li>
+                        <li>VPC</li>
+                        <li>S3</li>
+                        <li>CloudFront</li>
+                        <li>RDS</li>
+                        <li>DocumentDB</li>
+                        <li>SQS</li>
+                        <li>SNS</li>
+                        <li>SES</li>
+                        <li>ElastiCache (Redis)</li>
+                        <li>ECS</li>
+                        <li>KMS</li>
+                        <li>IAM</li>
+                        <li>Systems Manager</li>
+                        <li>Route53</li>
+                        <li>ACM</li>
+                        <li>ELB, ALB</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5>Responsibilities of backend developer</h5>
+            <ul>
+                <li>Writing code in .NET Core</li>
+                <li>Unit/Integration tests</li>
+                <li>Code analysis, error correction</li>
+                <li>Integration with 3rd party microservices</li>
+                <li>Cache management</li>
+            </ul>
+
+            <h5>Responsibilities of frontend developer</h5>
+            <ul>
+                <li>Writing code in React, CSS, HTML</li>
+                <li>Delivering shared components to other company divisions</li>
+            </ul>
+
+            <h5>General responsibilities</h5>
+            <ul>
+                <li>Mentor and developed junior developers and engineers.</li>
+                <li>Performing workshops and lectures on behalf of Siemens.</li>
+                <li>Performing estimates of work hours and tracking progress using SCRUM methodology.</li>
+                <li>Collaboration with team members to create and integrate high availability solutions for mission-critical applications.</li>
+                <li>Collaboration with UX/UI team</li>
+                <li>Collaborated with project managers, developers, quality assurance and customers to resolve technical issues.</li>
+                <li>Code analysis and errors correction</li>
+                <li>Optimizing applications performance by making adjustments and resolving bugs.</li>
+            </ul>
+
+            <h5>Product I am involved in:</h5>
+            <ul>
+                <li>PADS Connect</li>
+            </ul>
         </div>
     </section>
 
@@ -144,7 +198,7 @@
             <ul>
                 <li>Design and implementation of AWS Cloud infrastructure</li>
                 <li>Provisioning of EC2 instances using Opsworks and Chef</li>
-                <li>Deploying containers to AWS cloud to ElasticBeanstalk, ECS, and EKS (Kubernetes)</li>
+                <li>Deploying containers to AWS cloud to ElasticBeanstalk, ECS</li>
                 <li>Deploying Lambda functions</li>
                 <li>Designing CI/CD processes, from early build to deployment</li>
                 <li>Implementation of CI/CD processes in Gitlab, Bitbucket, CircleCI, also with Jenkins</li>
@@ -153,8 +207,7 @@
                 <li>Describing state of instances using Chef</li>
                 <li>Autoscaling, redundancy, high availability</li>
                 <li>Preparing of devboxes using Vagrant, provisioned by Chef or Ansible</li>
-                <li>
-                    List of AWS services used and managed by me:
+                <li>List of AWS services used and managed by me:
                     <ul>
                         <li>Lambda</li>
                         <li>EC2</li>

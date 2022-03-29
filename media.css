@@ -1,0 +1,30 @@
+@media screen {
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media print {
+    #workHistory > section {
+        display: block;
+    }
+
+    #workHistory > section div:first-child {
+        padding-left: 50%;
+    }
+
+    #workHistory > section div:first-child:before {
+        position: absolute;
+        left: 0.4rem;
+        top: 0.4rem;
+    }
+
+    #workHistory h1,
+    #workHistory h2,
+    #workHistory h3,
+    #workHistory h4 {
+        margin-top: 0;
+        margin-bottom: 0.3rem;
+    }
+}
