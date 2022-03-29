@@ -1,0 +1,215 @@
+body {
+    font-family: 'OpenSans', Verdana, sans-serif;
+}
+
+ul {
+    list-style-position: inside;
+    line-height: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+    color: #000;
+}
+
+a:after {
+    display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-image: url("icons/external-link.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 3px 0 -3px 5px;
+}
+
+time {
+    font-size: 0.8rem;
+}
+
+time:first-of-type:before {
+    display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-image: url("icons/time.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 3px 5px -3px 0;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+}
+
+header img {
+    max-width:200px;
+    margin: 0 35px 35px 0;
+    border-radius: 50%;
+}
+
+header ul {
+    list-style: none;
+    padding-left: 1.6rem;
+    columns: 2;
+    column-width: 15rem;
+    line-height:1.2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header a:before {
+    display: inline-block;
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 10px 5px -3px -1.6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header a:after {
+    display: none;
+}
+
+header a.mobile:before {
+    background-image: url("icons/smartphone.svg");
+}
+
+header a.email:before {
+    background-image: url("icons/envelope.svg");
+}
+
+header a.linkedin:before {
+    background-image: url("logos/linkedin.svg");
+}
+
+header a.github:before {
+    background-image: url("logos/github.svg");
+}
+
+header a.stackoverflow:before {
+    background-image: url("logos/stack-overflow.svg");
+}
+
+header:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#summary {
+    line-height: 1.6rem;
+}
+
+#skills {
+    background: #eee;
+    padding: 0.4rem;
+    margin: 0.4rem -0.4rem;
+}
+
+#skills ul {
+    columns: 2;
+    width: 30rem;
+}
+
+#skills .icon:before {
+    display: inline-block;
+    width:1.4rem;
+    height: 1.4rem;
+    margin: 0 0.4rem -0.4rem 0;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#skills .icon.aws:before {
+    background-image: url("logos/aws.svg");
+}
+
+#skills .icon.terraform:before {
+    background-image: url("logos/terraform.svg");
+}
+
+#skills .icon.docker:before {
+    background-image: url("logos/docker.svg");
+}
+
+#skills .icon.kubernetes:before {
+    background-image: url("logos/kubernetes.svg");
+}
+
+#skills .icon.ansible:before {
+    background-image: url("logos/ansible.svg");
+    background-size: cover;
+    background-position: top center;
+}
+
+#skills .icon.netcore:before {
+    background-image: url("logos/netcore.svg");
+}
+
+#skills .icon.python:before {
+    background-image: url("logos/python.svg");
+}
+
+#skills .icon.nodejs:before {
+    background-image: url("logos/nodejs.svg");
+}
+
+#skills .icon.angular:before {
+    background-image: url("logos/angular.svg");
+}
+
+#workHistory > section {
+    border-bottom: 1px dashed #333;
+}
+
+#workHistory > section:not(.flexRow) {
+    display: flex;
+}
+
+#workHistory div.flexRow {
+    display: flex;
+}
+
+#workHistory > section:last-child {
+    border: none;
+}
+
+#workHistory > section div:not(.flexRow):first-child {
+    flex: 0 0 16em;
+    background: #eee;
+    margin-right: 0.4rem;
+    padding: 0.4rem 0 0.4rem 0.4rem;
+}
+
+#workHistory > section div:not(.flexRow):first-child:before {
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 10rem;
+    height: 3rem;
+}
+
+#siemens div:not(.flexRow):first-child:before {
+    background-image: url("logos/siemens.svg");
+}
+
+#pitney-bowes div:not(.flexRow):first-child:before {
+    background-image: url("logos/pitney_bowes.svg");
+}
