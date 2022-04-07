@@ -142,6 +142,10 @@ header:after {
     width: 30rem;
 }
 
+#skills .experienceTime {
+    margin-left: 0.2rem;
+}
+
 #skills .icon:before {
     display: inline-block;
     width:1.4rem;
