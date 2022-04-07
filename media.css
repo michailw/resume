@@ -6,6 +6,10 @@
 }
 
 @media print {
+    #pdf-link {
+        display: none;
+    }
+
     #workHistory > section {
         display: block;
     }

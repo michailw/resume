@@ -1,5 +1,23 @@
 body {
     font-family: 'OpenSans', Verdana, sans-serif;
+    position: relative;
+}
+
+#pdf-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#pdf-link:before {
+    display: block;
+    content: "";
+    background-image: url('icons/pdf.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 4rem;
+    margin-bottom: 0.2rem;
 }
 
 ul {
